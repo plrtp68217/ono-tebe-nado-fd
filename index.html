@@ -1,14 +1,21 @@
 <!DOCTYPE html>
+
 <html lang="ru">
+
   <head>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/style.css">
+
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+
   </head>
+
   <body>
 
     <header class="header">
@@ -45,11 +52,10 @@
 
       </nav>
 
-      <!-- оформление - то через css? -->
+      <!-- TODO: сдедать ссылку блочной -->
       <a class="header__logo">
 
         <img
-          class="header__logo-image"
           src="images/logo-black.svg" 
           alt="Черный логотип оно тебе надо" 
         >
@@ -72,17 +78,19 @@
       
       <section class="cover">
 
+        <div class="overlay"></div>
+
         <h1 class="cover__title">
 
-          <span class="cover__title-item">
+          <span class="cover__title-item cover__title-item-start">
             оно
           </span>
 
-          <span class="cover__title-item">
+          <span class="cover__title-item cover__title-item-center">
             тебе
           </span>
 
-          <span class="cover__title-item">
+          <span class="cover__title-item cover__title-item-end">
             надо
           </span>
 
@@ -110,43 +118,36 @@
 
         <ul class="lots__list">
 
-          <li>
+          <li class="lots__list-item">
 
-            <a href="#0">
+            <a href="#0" class="card__link">
 
-              <article>
+              <article class="card__content">
+
+                <div class="card__image">
+
+                  <img 
+                    src="/images/card-lot-01.jpg" 
+                    alt="Дети играют с зеркалом"
+                  >
+
+                </div>
+
+                <div class="overlay"></div>
+
+                <div class="card__info">
+
+                  <h3 class="card__title">
+                    Фильм режиссёра, который бросил киношколу
+                  </h3>
+  
+                  <p class="card__description">
+                    Не просто бросил, а ушёл с первой лекции. Какой была бы ваша 
+                    ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+                  </p>
+
+                </div>
                 
-                <h3>
-                  Фильм режиссёра, который бросил киношколу
-                </h3>
-
-                <p>
-                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша 
-                  ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-                </p>
-
-              </article>
-              
-            </a>
-
-          </li>
-
-          <li>
-
-            <a href="#0">
-
-              <article>
-                
-                <h3>
-                  Книга, где описан один скучный день из жизни рекламного агента
-                </h3>
-
-                <p>
-                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами 
-                  на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и 
-                  об истории литературы, начиная с античных времён. И это всё накладывается на 
-                  эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
-                </p>
 
               </article>
               
@@ -156,19 +157,68 @@
 
           <li class="lots__list-item">
 
-            <a href="#0">
+            <a href="#0" class="card__link">
 
-              <article>
+              <article class="card__content">
 
-                <h3>
-                  Картина, которую повторит даже 5-летний сын маминой подруги
-                </h3>
+                <div class="card__image">
 
-                <p>
-                  Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее 
-                  на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на 
-                  такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?
-                </p>
+                  <img 
+                    src="/images/card-lot-02.jpg" 
+                    alt="Книга 'Иностранка' от автора Джеймс Джойс"
+                  >
+
+                <div class="overlay"></div>
+
+                <div class="card__info">
+                  
+                  <h3 class="card__title">
+                    Книга, где описан один скучный день из жизни рекламного агента
+                  </h3>
+  
+                  <p class="card__description">
+                    Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами 
+                    на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и 
+                    об истории литературы, начиная с античных времён. И это всё накладывается на 
+                    эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
+                  </p>
+
+                </div>
+
+              </article>
+              
+            </a>
+
+          </li>
+
+          <li class="lots__list-item">
+
+            <a href="#0" class="card__link">
+
+              <article class="card__content">
+
+                <div class="card__image">
+
+                  <img 
+                    src="/images/card-lot-03.jpg" 
+                    alt="Разноцветная картина в геометричекском стиле"
+                  >
+
+                <div class="overlay"></div>
+
+                <div class="card__info">
+
+                  <h3 class="card__title">
+                    Картина, которую повторит даже 5-летний сын маминой подруги
+                  </h3>
+  
+                  <p class="card__description">
+                    Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее 
+                    на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на 
+                    такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?
+                  </p>
+
+                </div>
 
               </article>
 
@@ -178,45 +228,55 @@
 
         </ul>
 
-        <a href="#0">
-          посмотреть больше
-        </a>
+        <div class="lots__more">
+
+          <a class="lots__more-link" href="#0">
+            посмотреть больше
+          </a>
+
+        </div>
+
 
       </section>
 
       <section class="about">
 
-        <div>
+        <div class="about__column-left">
 
-          <!-- оформление - то через css? -->
-          <img 
-            class="" 
+          <div class="about__logo-white">
+
+          </div>
+          <!-- <img 
             src="/images/logo-white.svg" 
             alt="Белый логотип оно тебе надо" 
-          >
+          > -->
 
         </div>
 
-        <div>
+        <div class="about__column-right">
 
-          <h2>
+          <h2 class="about__title">
             Об аукционе
           </h2>
 
-          <p>
-            Здесь вы не встретите очередное пафосное собрание невероятно дорогого 
-            антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. 
-            Потому что кому нужен дневник девочки-подростка или картина, которую может 
-            нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
-          </p>
+          <div class="about__description">
+            
+            <p>
+              Здесь вы не встретите очередное пафосное собрание невероятно дорогого 
+              антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. 
+              Потому что кому нужен дневник девочки-подростка или картина, которую может 
+              нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
+            </p>
+  
+            <p>
+              Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и 
+              прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто 
+              неудачными. Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без 
+              этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, 
+              продолжали верить их создатели. И сейчас эти лоты стали культовыми. 
+            </p>
 
-          <p>
-            Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и 
-            прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто 
-            неудачными. Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без 
-            этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, 
-            продолжали верить их создатели. И сейчас эти лоты стали культовыми. 
-          </p>
+          </div>
 
         </div>
 
@@ -226,7 +286,7 @@
 
     <footer class="footer">
 
-      <address class="address">
+      <address class="address footer__address">
 
         <a href="tel:+99995555555">+9 999 555 5555</a>
 
@@ -276,20 +336,40 @@
 
           <li class="footer__socials-list-item">
 
-            <!-- TODO картинка соц сети. картинка оформления, то через css  -->
-            <a class="socials_link" href="#0"></a>
+            <a class="socials_link">
+
+              <img 
+                src="/images/yt.svg" 
+                alt="Логотип YouTube"
+              >
+
+            </a>
             
           </li>
 
           <li class="footer__socials-list-item">
 
-            <a class="socials_link" href="#0"></a>
+            <a class="socials_link">
+
+              <img 
+                src="/images/vk.svg" 
+                alt="Логотип VK"
+              >
+
+            </a>
 
           </li>
 
           <li class="footer__socials-list-item">
 
-            <a class="socials_link" href="#0"></a>
+            <a class="socials_link">
+
+              <img 
+                src="/images/pinterest.svg" 
+                alt="Логотип Pinterest"
+              >
+
+            </a>
 
           </li>
 
@@ -300,4 +380,5 @@
     </footer>
 
   </body>
+
 </html>
