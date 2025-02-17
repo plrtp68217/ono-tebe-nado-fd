@@ -66,7 +66,7 @@
   height: 757px;
   background-image: url(/images/cover.jpg);
   padding: 50px;
-
+  margin-bottom: 180px;
 }
 
 .overlay {
@@ -84,6 +84,9 @@
   width: 1000px;
   height: 385px;
   margin-top: 115px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 100px;
@@ -93,16 +96,12 @@
   z-index: 2;
 }
 
-.cover__title-item {
-  display: block;
-}
-
 .text-center {
-  text-align: center;
+  align-self: center;
 }
 
 .text-end {
-  text-align: end;
+  align-self: flex-end;
 }
 
 .cover__description {
@@ -129,7 +128,7 @@
 .cover__description-button {
   width: 256px;
   height: 51px;
-  background: none;
+  background: transparent;
   border: 1px solid #FFFFFF;
   font-weight: 500;
   font-size: 22px;
@@ -139,16 +138,89 @@
 }
 
 .lots {
-
+  margin: 0 24px 120px 24px;
 }
 
-.lots__list-item {
+.lots__title {
+  margin-left: 40px;
+  margin-bottom: 27px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46.96px;
+  text-transform: uppercase;
+}
+
+.lots__card-list {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.lots__card-list-item {
   width: 334px;
-  height: 596px;
+  min-height: 596px;
+}
+
+.card__link {
+  position: relative;
+  height: 100%;
+}
+
+.card {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 48px 40px;
+  color: #FFFFFF;
+}
+
+.card_type_film {
+  background-image: url(/images/card-lot-01.jpg);
+}
+
+.card_type_book {
+  background-image: url(/images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+  background-image: url(/images/card-lot-03.jpg);
 }
 
 .card__content {
   position: relative;
+}
+
+.card__info {
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26.4px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.card__description {
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.lots__more {
+  margin-top: 30px;
+  margin-left: 40px;
+  font-size: 20px;
+  line-height: 23.48px;
+
 }
 
 .about {
