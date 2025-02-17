@@ -8,7 +8,6 @@
 
 .header__menu {
   width: 391.48px;
-  height: 22px;
   font-size: 18px;
   line-height: 21.13px;
   justify-self: start;
@@ -30,8 +29,8 @@
 }
 
 .header__logo {
-  width: 129.11px;
-  height: 104.65px;
+  width: 136px;
+  height: 107px;
 
 }
 
@@ -52,6 +51,7 @@
 
 .address a {
   text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .cover {
@@ -59,6 +59,8 @@
   width: 100%;
   height: 757px;
   background-image: url(/images/cover.jpg);
+  background-size: cover;
+  background-position: 51%;
   padding: 50px;
   margin-bottom: 180px;
 }
@@ -90,11 +92,16 @@
   z-index: 2;
 }
 
+.cover__title-item {
+}
+
 .text-center {
+  margin-left: 28px;
   align-self: center;
 }
 
 .text-end {
+  text-align: end;
   align-self: flex-end;
 }
 
@@ -159,6 +166,7 @@
 .card__link {
   position: relative;
   height: 100%;
+  text-decoration: none;
 }
 
 .card {
@@ -201,12 +209,13 @@
   line-height: 26.4px;
   text-transform: uppercase;
   text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .card__description {
   font-size: 20px;
   line-height: 24px;
-  text-decoration: none;
+
 }
 
 .lots__more {
@@ -214,7 +223,6 @@
   margin-left: 40px;
   font-size: 20px;
   line-height: 23.48px;
-
 }
 
 .about {
@@ -236,8 +244,8 @@
 }
 
 .about__logo-image {
-  width: 136px;
-  height: 102px;
+  width: 148px;
+  height: 114px;
 }
 
 .about__column-left {
@@ -245,7 +253,7 @@
 }
 
 .about__column-right {
-  padding: 133px 0 13px 25px;
+  padding: 136px 0 0 25px;
 }
 
 .about__title {
@@ -257,11 +265,14 @@
 }
 
 .about__text {
+  max-width: 693px;
+  height: 312px;
   font-size: 20px;
   line-height: 24px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 24px;
+  overflow-wrap: break-word;
 }
 
 .footer {
