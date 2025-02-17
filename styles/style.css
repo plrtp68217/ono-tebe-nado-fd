@@ -1,0 +1,96 @@
+.header {
+  height: 293px;
+  padding: 0 50px;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+}
+
+.header__menu {
+  width: 391.48px;
+  height: 22px;
+  font-size: 18px;
+  line-height: 21.13px;
+  justify-self: start;
+
+}
+
+.header__links-list {
+  display: flex;
+  gap: 31.48px;
+  list-style: circle;
+}
+
+.list-item_no-bullit {
+  list-style: none;
+}
+
+.link_active {
+  text-decoration: none;
+}
+
+.header__logo {
+  width: 129.11px;
+  height: 104.65px;
+
+}
+
+.header__address {
+  width: 240px;
+  height: 98px;
+  justify-self: flex-end;
+
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24.3px;
+  letter-spacing: 0;
+}
+
+.address a {
+  text-decoration: underline;
+}
+
+
+.main {
+
+
+}
+
+.cover {
+
+}
+
+.lots {
+
+}
+
+.lots__list-item {
+  width: 334px;
+  height: 596px;
+}
+
+.about {
+
+}
+
+.about__logo {
+  width: 240px;
+  height: 240px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+.footer {
+
+
+}
+
+.footer__socials-list-item {
+  width: 48px;
+  height: 48px;
+}
