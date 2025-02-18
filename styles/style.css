@@ -121,7 +121,7 @@
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
-  word-spacing: 0.9em;
+  word-spacing: 0.84em;
   text-transform: uppercase;
 
 }
@@ -209,13 +209,11 @@
   line-height: 26.4px;
   text-transform: uppercase;
   text-decoration: underline;
-  text-underline-offset: 4px;
 }
 
 .card__description {
   font-size: 20px;
   line-height: 24px;
-
 }
 
 .lots__more {
