@@ -2,8 +2,7 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  height: 293px;
-  padding: 0 50px;
+  padding: 93px 50px;
 }
 
 .header__menu {
@@ -37,8 +36,6 @@
 .header__address {
   justify-self: flex-end;
   width: 240px;
-  height: 98px;
-
 }
 
 .address {
@@ -57,10 +54,9 @@
 .cover {
   position: relative;
   width: 100%;
-  height: 757px;
   margin-bottom: 180px;
   padding: 50px;
-  background-image: url(/images/cover.jpg);
+  background-image: url(../images/cover.jpg);
   background-position: 51%;
   background-size: cover;
 }
@@ -82,7 +78,6 @@
   flex-direction: column;
   gap: 20px;
   width: 1000px;
-  height: 385px;
   margin-top: 115px;
   color: #FFFFFF;
   font-weight: 700;
@@ -116,7 +111,6 @@
   justify-content: space-between;
   align-items: center;
   width: 1000px;
-  height: 51px;
   margin-top: 106px;
   color: #FFFFFF;
 }
@@ -132,8 +126,8 @@
 
 .cover__description-button {
   width: 256px;
-  height: 51px;
   border: 1px solid #FFFFFF;
+  padding: 11px 0;
   color: #FFFFFF;
   font-weight: 500;
   font-size: 22px;
@@ -169,6 +163,7 @@
 
 .card__link {
   position: relative;
+  display: block;
   height: 100%;
   text-decoration: none;
 }
@@ -182,15 +177,15 @@
 }
 
 .card_type_film {
-  background-image: url(/images/card-lot-01.jpg);
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
-  background-image: url(/images/card-lot-02.jpg);
+  background-image: url(../images/card-lot-02.jpg);
 }
 
 .card_type_picture {
-  background-image: url(/images/card-lot-03.jpg);
+  background-image: url(../images/card-lot-03.jpg);
 }
 
 .card__content {
@@ -232,7 +227,6 @@
   display: grid;
   grid-template-columns: 334px 1fr;
   width: 1052px;
-  height: 595px;
   margin: 0 24px 180px 24px;
 }
 
@@ -272,7 +266,6 @@
   flex-direction: column;
   gap: 24px;
   max-width: 693px;
-  height: 312px;
   overflow-wrap: break-word;
   font-size: 20px;
   line-height: 24px;
@@ -282,9 +275,7 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   justify-content: center;
-  height: 180px;
-  padding: 0 50px;
-
+  padding: 0 50px 82px 50px;
 }
 
 .footer__menu-list {
@@ -292,7 +283,6 @@
   flex-direction: column;
   align-items: center;
   width: 163.9px;
-  height: 64px;
   font-size: 18px;
   line-height: 21.13px;
   list-style: none;
@@ -304,7 +294,6 @@
 
 .footer__address {
   width: 264.57px;
-  height: 98px;
 }
 
 .footer__social-list {
