@@ -92,7 +92,12 @@
   z-index: 2;
 }
 
-.cover__title-item {
+.cover__title-items {
+  display: flex;
+}
+
+.letter-spacing-normal {
+  letter-spacing: normal;
 }
 
 .text-center {
@@ -101,7 +106,6 @@
 }
 
 .text-end {
-  text-align: end;
   align-self: flex-end;
 }
 
